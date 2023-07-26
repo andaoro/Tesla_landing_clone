@@ -1,0 +1,30 @@
+---
+import Section from "./Section.astro";
+
+---
+
+<Section title="Model Y" subtitle="Concertar una prueba de conducción" color="black">
+    <img
+      slot="background"
+      src="/Model-Y.avif"
+      alt="Model Y"
+      class="h-full w-full object-cover object-center"
+    />
+
+    <div slot="footer" class="flex justify-center gap-x-4">
+      <a
+        title="Explorar inventario"
+        class="border-[3px] bg-gray-800 border-gray-800 text-sm rounded font-medium text-white px-12 py-2 inline-block "
+        href="#">Explorar inventario</a
+      >
+      <a
+        title="Prueba de conducción"
+        class="border-[3px] bg-gray-100 border-gray-100 text-sm rounded font-medium text-black px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors duration-300"
+        href="#">Pedido personalizado</a
+      >
+    </div>
+
+    <div slot="ExtraInfo">
+        <span class="text-xs">Disponible con Moves III</span>
+    </div>
+  </Section>

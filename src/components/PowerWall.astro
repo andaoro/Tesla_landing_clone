@@ -1,0 +1,20 @@
+---
+import Section from "./Section.astro";
+---
+
+<Section title="Solar y Powerwall" subtitle="Energía para todos" color="black">
+  <img
+    slot="background"
+    src="/SolarPanels.avif"
+    alt="Solar Panels"
+    class="h-full w-full object-cover object-center"
+  />
+
+  <div slot="footer" class="flex justify-center gap-x-4">
+    <a
+      title="Saber Más"
+      class="border-[3px] bg-gray-800 border-gray-800 text-sm rounded font-medium text-white px-12 py-2 inline-block"
+      href="#">Saber Más</a
+    >
+  </div>
+</Section>
